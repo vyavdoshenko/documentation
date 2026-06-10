@@ -48,7 +48,7 @@ is the index name. You must first create the index with [`FT.CREATE`](./ft.creat
 <details open>
 <summary><code>SEARCH query</code></summary>
 
-is the full-text query, using the same [query syntax](https://redis.io/docs/latest/develop/interact/search-and-query/query/) as `FT.SEARCH`. If the query is more than a single word, put it in quotes.
+is the full-text query, using the same [query syntax](https://valkey.io/topics/search-query/) as [`FT.SEARCH`](./ft.search.md). If the query is more than a single word, put it in quotes.
 </details>
 
 <details open>
@@ -242,4 +242,4 @@ dragonfly> FT.HYBRID idx SEARCH "running" VSIM @vec $q KNN 3 COMBINE LINEAR 4 AL
 
 ## Related topics
 
-- [RediSearch](https://redis.io/docs/latest/operate/oss_and_stack/stack-with-enterprise/search/)
+- [Valkey Search](https://valkey.io/topics/search/)
